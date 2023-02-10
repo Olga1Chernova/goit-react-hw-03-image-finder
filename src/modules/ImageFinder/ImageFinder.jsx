@@ -2,7 +2,7 @@ import { Component } from "react";
 import axios from 'axios'; //delete later
 import { Hearts } from 'react-loader-spinner';
 
-import image from "../../utils/img/index.jpg"; //delete later
+
 
 import css from "./image-finder.module.scss";
 
