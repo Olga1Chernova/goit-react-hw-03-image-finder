@@ -5,7 +5,7 @@ import Searchbar from "./Searchbar/Searchbar";
 import ImageGallery from "./ImageGallery/ImageGallery";
 import Button from "shared/components/Button/Button";
 import Loader from "shared/components/Loader/Loader";
-import Modal from "shared/components/Modal/Modal";
+import Modal from "shared/components/modal/Modal";
 import ImgDetails from "./ImgDetails/ImgDetails";
 
 import { searchImages } from "shared/services/images-api";
