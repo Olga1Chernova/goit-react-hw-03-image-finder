@@ -1,11 +1,11 @@
 import css from "./image-gallery-item.module.scss";
 
-const ImageGalleryItem = ({id, webformatURL, largeImageURL, onClick, tags}) => {
+const ImageGalleryItem = ({id, webformatURL, largeImageURL, showImg, tags}) => {
     return (
       <li
         key={id}
         className={css.ImageGalleryItem}
-        onClick={() => onClick(largeImageURL, tags)}
+        onClick={() => showImg({largeImageURL, tags})}
       >
         <img
           src={webformatURL}

@@ -1,12 +1,12 @@
 import css from "./image-gallery.module.scss";
 import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 
-const ImageGallery = ({items, onClick}) => {
+const ImageGallery = ({items, showImg}) => {
     return (
       <ul className={css.ImageGallery}>
         {items.map(({ id, webformatURL, largeImageURL, tags }) => (
           <ImageGalleryItem
-            onClick={onClick}
+            showImg={showImg}
             key={id}
             webformatURL={webformatURL}
             largeImageURL={largeImageURL}

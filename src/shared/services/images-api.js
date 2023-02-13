@@ -6,12 +6,12 @@ const instance = axios.create({
         key: '32280115-b50908f9a62d9acb0676d3a4b',
     }
 }) //params for all project
-export const searchImages = async (search) => {
+export const searchImages = async (q, page) => {
     const {data} = await instance.get(
         `/`, {
             params: {
-                q: search,
-                page: 1,
+                q,
+                page,
                 image_type: 'photo',
                 orientation: 'horizontal',
                 per_page: 12,
@@ -19,4 +19,3 @@ export const searchImages = async (search) => {
         })
     return data;
 }
-//`/?q=${search}&page=1&key=32280115-b50908f9a62d9acb0676d3a4b&image_type=photo&orientation=horizontal&per_page=12`)
